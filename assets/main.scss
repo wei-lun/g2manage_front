@@ -1,0 +1,105 @@
+* {
+  font-family: 'Microsoft YaHei', sans-serif;
+}
+.btn-line-heigh {
+  line-height: 2.5em;
+}
+.input-height > div > .v-input__slot {
+  min-height: 100% !important;
+  max-height: 100%;
+  margin-bottom: 0.2em;
+}
+
+.input-height .v-input__control{
+  min-height: 100% !important;
+}
+
+.input-height fieldset {
+  top: 0 !important;
+  height: inherit;
+}
+
+.input-height fieldset legend {
+  display:none;
+}
+
+.input-height .v-text-field__slot {
+  height: inherit;
+}
+
+.input-height .v-input__append-inner {
+  height: inherit;
+  align-items: center;
+  align-self: unset !important;
+}
+// 彩金貢獻池
+.sumfooter {
+table-layout: fixed;
+}
+.jackpot_contribution_pool button span{
+vertical-align: middle;
+font-size: 24px;
+}
+.jackpot_contribution_pool{
+position: relative;
+width: 80%;
+height: 43px;
+margin: 10px auto;
+padding: 5px;
+display: flex;
+}
+.jackpot_bgbox{
+flex: 1 1 auto;
+transition: .8s;
+}
+.jackpot_bgbox.active{
+width: 0!important;
+transition: 1s;
+flex: none
+}
+.jackpot_bg{
+padding: 6px 5px;
+height: 34px;  
+transition: .8s;
+}
+.jackpot_bg.animate_log:after{
+content: '';
+position: absolute;
+left: 0;
+width: 100%;
+height: 50px;
+top: 0;
+background: #424242;
+z-index: 10;
+animation: loading .8s 1 ease-in-out;
+animation-fill-mode: forwards;
+}
+@keyframes loading {
+from {
+  left: 0;
+  width: 100%;
+}
+to {
+  left: 100%;
+  width: 0;
+}
+}
+.jackpot_contribution_pool div:nth-of-type(1){
+left: 0;
+}
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-leave-active {
+transition: all .2s ease-in;
+}
+.slide-fade-enter-active {
+transition: all .5s ease-in;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+transform: translateX(-10px);
+opacity: 0;
+}
+.header_bt .v-badge--dot .v-badge__badge{
+width: 5px;
+height: 5px;
+}

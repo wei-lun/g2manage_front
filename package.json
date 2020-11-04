@@ -1,0 +1,51 @@
+{
+  "name": "g2manage_front",
+  "version": "1.0.0",
+  "description": "g2manage_front",
+  "author": "orange",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate -c nuxt.prod.config.js",
+    "test:unit": "ava --serial --config unit-tests.config.js --verbose",
+    "test:e2e": "ava --serial --config e2e-tests.config.js --verbose",
+    "test": "npm run test:unit & npm run test:e2e"
+  },
+  "dependencies": {
+    "@mdi/font": "^5.0.45",
+    "@nuxtjs/axios": "^5.9.3",
+    "echarts": "^4.6.0",
+    "moment": "^2.24.0",
+    "net": "^1.0.2",
+    "nuxt": "^2.9.2",
+    "nuxt-i18n": "^6.5.0",
+    "qs": "^6.9.1",
+    "stompjs": "^2.3.3",
+    "v-charts": "^1.19.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "devDependencies": {
+    "@gauseen/nuxt-proxy": "^1.0.1",
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-module": "^0.2.1",
+    "@nuxtjs/vuetify": "^1.10.0",
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "ava": "^3.5.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "browser-env": "^3.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": "^0.5.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jsdom": "^16.2.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^1.0.0",
+    "require-extension-hooks-vue": "^2.0.0"
+  }
+}
